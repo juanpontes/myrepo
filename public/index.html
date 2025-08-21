@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Food Rotation Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍽️ Food Rotation Manager</h1>
+    <p class="intro">Manage your 4-day rotation cycle. Each food can only be eaten once every four days. Add foods to your list, track when you eat them, and see what's available today!</p>
+
+    <section id="available-section">
+      <h2>Available Foods Today</h2>
+      <input type="text" id="newFoodInput" placeholder="New food" list="all-foods" />
+      <datalist id="all-foods"></datalist>
+      <div id="availableFoods" class="pill-list"></div>
+      <div id="entryForm" class="hidden">
+        <h3 id="selectedFood"></h3>
+        <label>Date eaten
+          <input type="date" id="dateInput" />
+        </label>
+        <label>Time eaten
+          <input type="time" id="timeInput" />
+        </label>
+        <div class="buttons">
+          <button id="confirmBtn">Confirm</button>
+          <button id="cancelBtn" type="button">Cancel</button>
+          <button id="removeBtn" type="button" class="danger hidden">Remove</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule-section">
+      <h2>Full Schedule</h2>
+      <div id="schedule"></div>
+      <button id="toggleScheduleBtn">Show all entries</button>
+    </section>
+
+    <section id="list-section">
+      <h2>Food list (Next Available Dates)</h2>
+      <div id="nextList"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
