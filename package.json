@@ -1,0 +1,14 @@
+{
+  "name": "food-rotation-app",
+  "version": "1.0.0",
+  "description": "Web app for tracking food rotation diet",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^8.0.1",
+    "express": "^4.18.2"
+  }
+}

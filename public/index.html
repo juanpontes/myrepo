@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Food Rotation Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Food Rotation Tracker</h1>
+
+  <section>
+    <form id="entryForm">
+      <input type="text" id="foodInput" list="food-suggestions" placeholder="Enter food" required />
+      <datalist id="food-suggestions"></datalist>
+      <button type="submit">Add Entry</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Last Four Days</h2>
+    <div id="summaryList"></div>
+  </section>
+
+  <section>
+    <h2>Manage Foods</h2>
+    <ul id="foodList"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
